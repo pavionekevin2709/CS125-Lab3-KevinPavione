@@ -1,0 +1,8 @@
+=== Sales Data Validation Errors ===
+
+Line 7: employee_name cannot be empty → {'employee_id': '106', 'employee_name': ' ', 'department': 'Clothing', 'sales_amount': '950.00', 'date': '2024-01-19          ← empty name (invalid)'}
+Line 8: unexpected error: 'list' object has no attribute 'strip' → {'employee_id': '107', 'employee_name': 'Anna White', 'department': 'Electronics', 'sales_amount': '$1', 'date': '450.30', None: ['2024-01-20']}
+Line 9: department must be one of: Electronics, Home, Clothing, Sports → {'employee_id': '108', 'employee_name': 'Tom Harris', 'department': 'Automotive', 'sales_amount': '1800.00', 'date': '2024-01-21   ← invalid dept'}
+Line 10: date must be in YYYY-MM-DD format → {'employee_id': '109', 'employee_name': 'Lisa Green', 'department': 'Home', 'sales_amount': '2300.50', 'date': '2024/01/22         ← wrong date format'}
+Line 11: sales_amount must be a positive number → {'employee_id': '110', 'employee_name': 'Robert King', 'department': 'Sports', 'sales_amount': '-500.75', 'date': '2024-01-23      ← negative sales'}
+Line 15: sales_amount must be a positive number → {'employee_id': '114', 'employee_name': 'Emily Brown', 'department': 'Home', 'sales_amount': '', 'date': '2024-01-27               ← missing sales'}

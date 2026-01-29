@@ -1,0 +1,12 @@
+employee_id,employee_name,department,sales_amount,date
+101,John Smith,Electronics,1250.50,2024-01-15
+102,Sarah Johnson,Clothing,890.00,2024-01-15
+103,Mike Davis,Electronics,2100.75,2024-01-16
+104,Emily Brown,Home,1450.25,2024-01-17
+105,David Lee,Sports,3200.00,2024-01-18
+111,John Smith,Electronics,1750.00,2024-01-24
+112,Sarah Johnson,Clothing,1200.80,2024-01-25
+113,Mike Davis,Electronics,1950.00,2024-01-26
+115,David Lee,Sports,2800.50,2024-01-28
+116,Anna White,Electronics,1600.00,2024-01-29
+117,Julia Martinez,Clothing,900.00,2024-01-30
