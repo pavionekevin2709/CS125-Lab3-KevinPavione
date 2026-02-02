@@ -1,0 +1,84 @@
+# Project Name: CS Programming for Everyone - Lab 3 Demo
+# Author: Kevin Pavione
+# Date: 1/27/2026 
+
+# =========================================================
+# Exercise 1 - Text File Operations
+# Demonstrates basic file reading, writing, and appending operations.
+# =========================================================
+
+# Step 1: Create and write data to a text file
+print("=== Step 1. Writing to file ===")
+
+with open('sample.text', 'w') as file:
+    file.write("Line 1: Welcome to CS 125!\n")
+    file.write("Line 2: This is a demonstration of the file operations in Python.\n")
+    file.write("Line 3: Python makes file handling very easy.\n")
+    file.write("Line 4: Always use 'with' statements.\n")
+    file.write("Line 5: They automatically close files.\n")
+    file.write("Line 6: File operations include read, write, and append.\n")
+    file.write("Line 7: This file was created using Python.\n")
+
+print("File created and written successfully!\n")
+
+# Step 2: Read and print entire file contents
+print("=== Step 2. Reading the file ===")
+
+with open('sample.text', 'r') as file:
+    content = file.read()
+
+print(content)
+
+# Step 3: Read file line by line with added line numbers
+print("=== Step 3. Reading from file line by line with numbers added ===")
+
+with open('sample.text', 'r') as file:
+    for line_number, line in enumerate(file, start=1):
+        print(f"{line_number}: {line}", end='')
+
+print("\n")
+
+# Step 4: Append additional text to the file
+print("=== Step 4. Appending to the file ===")
+
+with open('sample.text', 'a') as file:
+    file.write("Line 8: This line was appended later on.\n")
+    file.write("Line 9: File operations are fundamental.\n")
+
+print("Text appended successfully!\n")
+
+# Step 5: Read the updated file to show the appended content
+print("=== Step 5. Reading updated file contents ===")
+
+with open('sample.text', 'r') as file:
+    content = file.read()
+
+print(content)
+
+print("Exercise 1 Complete!\n")
+
+# =========================================================
+# Exercise 2 - CSV File Operations
+# Demonstrates basics of working with CSV files while using the csv module.
+# =========================================================
+
+import csv
+
+# Step 1: Create CSV file while using the csv module
+print("=== Exercise 2 - Step 1. Creating CSV file ===")
+
+# (The photos cut off here — you can continue from this point)
+# Example continuation you might want to add:
+
+# data = [
+#     ["Name", "Age", "Major"],
+#     ["Alice", 20, "Computer Science"],
+#     ["Bob", 19, "Mathematics"],
+#     ["Charlie", 21, "Physics"]
+# ]
+
+# with open('students.csv', 'w', newline='') as csvfile:
+#     writer = csv.writer(csvfile)
+#     writer.writerows(data)
+
+# print("CSV file created successfully!")

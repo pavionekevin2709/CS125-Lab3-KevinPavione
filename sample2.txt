@@ -1,0 +1,9 @@
+Line 1: Welcome to CS 125!
+Line 2: This is a demonstration of the file operations in Python.
+Line 3: Python makes file handling very easy.
+Line 4: Always use 'with' statements.
+Line 5: They automatically close files.
+Line 6: File operations include read, write, and append.
+Line 7: This file was created using Python.
+Line 8: This line was appended later on.
+Line 9: File operations are fundamental.
